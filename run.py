@@ -115,7 +115,7 @@ if __name__ == '__main__':
     print("Running the compiled model in FHE mode...")
     t_begin = time.time()
     with torch.no_grad():
-        stylized_results = quantized_network.forward(content_input.numpy(), style_input.numpy(), fhe="simulate")
+        stylized_results = quantized_network.forward(content_input.numpy(), style_input.numpy(), fhe="execute")
     visualized_imgs = torch.cat([content_input, style_input, torch.tensor(stylized_results)])
     save_image(visualized_imgs, "output_fhe.jpg", nrow=3)
     t_end = time.time()
