@@ -1,4 +1,4 @@
-Concrete-NST (Neural Style Transfer)
+# Concrete-NST (Neural Style Transfer)
 
 This repo contains a *ultra fast* Nerual Style Transfer (NST) solution, encripted with ZAMA's Fully Homomorphic Encryption (FHE) technology for privacy-preserving AI.
 
